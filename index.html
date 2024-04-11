@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Search PWA</title>
+    <link rel="stylesheet" href="/assets/CSS/style.css">
+    <link rel="manifest" href="/manifest.json">
+    
+    <meta name="theme-color" content="#4D5360" />
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/assets/CSS/img/logo-texto-em-voz.png" alt="Voz">
+        </div>
+        <button id="start-btn"><i class="fas fa-microphone"></i><img src="/assets/CSS/img/logo-microphone.png" alt="Voz"></button>
+        <p id="result"></p>
+    </div>
+    <script src="/assets/JS/script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
