@@ -1,6 +1,6 @@
 {
-  "name": "texto em voz",
-  "short_name": "voz",
+  "name": "Texto em Voz",
+  "short_name": "Voz",
   "icons": [
     {
       "src": "assets/img/29.png",
@@ -31,7 +31,7 @@
       "src": "assets/img/80.png",
       "sizes": "80x80",
       "type": "image/png",
-	  "purpose": "any maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "assets/img/180.png",
@@ -47,5 +47,7 @@
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#31506F",
-  "theme_color": "#4D5360"
+  "theme_color": "#4D5360",
+  "splash_pages": null,
+  "prefer_related_applications": false
 }
