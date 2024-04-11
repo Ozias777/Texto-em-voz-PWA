@@ -5,6 +5,29 @@ body {
     background-color: #b82adb;
 }
 
+header {
+    background-color: #b82adb;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do nav */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .container {
     max-width: 400px;
     margin: 50px auto;
@@ -12,7 +35,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     background-color: #b82adb;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px none;
 }
 
 .logo {
@@ -56,3 +79,5 @@ button:hover {
     font-size: 18px;
     color: #ffffff;
 }
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Configurações do Aplicativo</h2>
+        <label for="notificacoes">Notificações:</label>
+        <input type="checkbox" id="notificacoes" name="notificacoes" checked>
+        
+        <label for="idioma">Idioma:</label>
+        <select id="idioma" name="idioma">
+            <option value="pt-br">Português</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+        </select>
+        
+        <label for="tema">Tema:</label>
+        <select id="tema" name="tema">
+            <option value="claro">Claro</option>
+            <option value="escuro">Escuro</option>
+        </select>
+    </div>
+
+    <script src="assets/JS/configuracoes.js"></script>
+</body>
+</html>
